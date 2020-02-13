@@ -8,4 +8,13 @@ public class Funcionario extends Pessoa {
         super(nome, idade, cidadeDeNasc);
         this.numeroDeMatricula = numeroDeMatricula;
     }
+    public void mostrarDados(){
+        String nome = getNome();
+        int idade = getIdade();
+        String cidade = getCidadeDeNasc();
+        System.out.println("Nome:"+nome +" | "+
+                "Idade: "+idade+" | "+
+                "Cidade: "+cidade+" | "+
+                "Matricula :"+numeroDeMatricula);
+    }
 }

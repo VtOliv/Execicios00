@@ -12,9 +12,17 @@ public class Cliente extends Pessoa {
         String nome = getNome();
         int idade = getIdade();
         String cidade = getCidadeDeNasc();
-        System.out.println("nome:"+nome +" "+
-                "idade: "+idade+" "+
-                "cidade: "+cidade+" "+
+        System.out.println("Nome:"+nome +" | "+
+                "Idade: "+idade+" | "+
+                "Cidade: "+cidade+" | "+
         "CPF :"+cpf);
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 }
